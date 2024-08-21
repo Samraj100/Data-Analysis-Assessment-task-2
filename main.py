@@ -30,7 +30,7 @@ def showUpdatedData():
 
 def showCharts():
     weather_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Rainfall',
                     color='blue',
@@ -40,9 +40,9 @@ def showCharts():
 
 def show2007Charts():
     oldweather_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
-                    y='Rainfall',
+                    y='Rainfall', 
                     color='blue',
                     alpha=0.3,
                     title='Rain in Canberra in 2007')
@@ -50,7 +50,7 @@ def show2007Charts():
 
 def show2017Charts():
     newweather_df.plot(
-                    kind='bar',
+                    kind='line',
                     x='Date',
                     y='Rainfall',
                     color='blue',
@@ -61,7 +61,7 @@ def show2017Charts():
 def userOptions():
     global quit
 
-    print("""Welcome to the Big Mac Data Extraordinaire!
+    print("""Welcome to the Canberra Data Extraordinaire!
           
     Please select an option:
     1 - Show the original dataset
